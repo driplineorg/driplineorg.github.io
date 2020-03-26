@@ -12,4 +12,5 @@ This is just the homepage, you can find more information at the following pages:
 
    The Guides and Walthroughs <https://driplineorg.github.io/controls-guide>
    The Dripline Protocol Documentation <https://driplineorg.github.io/dripline>
+   The C++ Implementation, dripline-cpp <https://driplineorg.github.io/dripline-cpp/branches/dl3_develop>
    The Python Implementation, dripline-python <https://driplineorg.github.io/dripline-python>
