@@ -44,6 +44,8 @@
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Why Use Dripline?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#you-should-consider-using-dripline-if">You should consider using dripline if</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#you-should-consider-not-using-dripline-if">You should consider not using dripline if</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#why-we-built-dripline">Why We Built Dripline</a></li>
 </ul>
 </li>
@@ -95,19 +97,23 @@
 <p>If you’ve reached this page, you are probably asking why you would consider using dripline
 and if it is an appropriate solution for your problem.
 The answer to both will depend on circumstances, and we’ll try and dig into that a bit.</p>
-<p>You should consider using dripline if:
-​
-#. Your system under control is continuously evolving
-#. You require flexible controls that will support operational modes that you can’t clearly define from the start
-#. You need to support continuous operation of part of your system while developing or updating another
-#. You need support for multiple users interacting with the system at the same time, over remote connections, possibly with slow or unstable network interfaces
-#. You need controls that are distributed and coordinated across multiple servers
-#. Your equipment supports a well-documented control interface and communication protocol and/or provides linux-compatible drivers and libraries
-#. You want to be able to easily add arbitrary coordination logic implemented in python
-#. You want to be able to implement performant components in C++
-#. You are comfortable working in a linux environment and from the command line
-#. Your system needs to operate continuously and will combine equipment and subsystems that are quite different from each other</p>
-<p>You should consider not using dripline if:</p>
+<div class="section" id="you-should-consider-using-dripline-if">
+<h2>You should consider using dripline if<a class="headerlink" href="#you-should-consider-using-dripline-if" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Your system under control is continuously evolving</p></li>
+<li><p>You require flexible controls that will support operational modes that you can’t clearly define from the start</p></li>
+<li><p>You need to support continuous operation of part of your system while developing or updating another</p></li>
+<li><p>You need support for multiple users interacting with the system at the same time, over remote connections, possibly with slow or unstable network interfaces</p></li>
+<li><p>You need controls that are distributed and coordinated across multiple servers</p></li>
+<li><p>Your equipment supports a well-documented control interface and communication protocol and/or provides linux-compatible drivers and libraries</p></li>
+<li><p>You want to be able to easily add arbitrary coordination logic implemented in python</p></li>
+<li><p>You want to be able to implement performant components in C++</p></li>
+<li><p>You are comfortable working in a linux environment and from the command line</p></li>
+<li><p>Your system needs to operate continuously and will combine equipment and subsystems that are quite different from each other</p></li>
+</ol>
+</div>
+<div class="section" id="you-should-consider-not-using-dripline-if">
+<h2>You should consider not using dripline if<a class="headerlink" href="#you-should-consider-not-using-dripline-if" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>You need a system to operate on an open network and expect it to maintain strict security</p></li>
 <li><p>Your system uses a very small number of devices and/or devices that are very similar or from a single OEM that provides a control solution</p></li>
@@ -117,6 +123,7 @@ The answer to both will depend on circumstances, and we’ll try and dig into th
 </ol>
 <p>If you’re interested in learning more aboout dripline, or using it for your system,
 please <a class="reference internal" href="Contact-Us.html#contact-us"><span class="std std-ref">let us know</span></a>!</p>
+</div>
 <div class="section" id="why-we-built-dripline">
 <h2>Why We Built Dripline<a class="headerlink" href="#why-we-built-dripline" title="Permalink to this headline">¶</a></h2>
 <p>Dripline was designed and built by the <a class="reference external" href="http://www.project8.org">Project 8</a> collaboration, as the slow-controls system for a small-but-growing physics experiment.

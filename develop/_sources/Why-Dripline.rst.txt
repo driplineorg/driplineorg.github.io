@@ -10,8 +10,9 @@ If you've reached this page, you are probably asking why you would consider usin
 and if it is an appropriate solution for your problem.
 The answer to both will depend on circumstances, and we'll try and dig into that a bit.
 
-You should consider using dripline if:
-​
+You should consider using dripline if
+=====================================
+
 #. Your system under control is continuously evolving
 #. You require flexible controls that will support operational modes that you can't clearly define from the start
 #. You need to support continuous operation of part of your system while developing or updating another
@@ -23,7 +24,8 @@ You should consider using dripline if:
 #. You are comfortable working in a linux environment and from the command line
 #. Your system needs to operate continuously and will combine equipment and subsystems that are quite different from each other
 
-You should consider not using dripline if:
+You should consider not using dripline if
+=========================================
 
 #. You need a system to operate on an open network and expect it to maintain strict security
 #. Your system uses a very small number of devices and/or devices that are very similar or from a single OEM that provides a control solution
