@@ -43,7 +43,10 @@
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Why Use Dripline?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Why Use Dripline?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-we-built-dripline">Why We Built Dripline</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference external" href="https://driplineorg.github.io/controls-guide">The Guides and Walthroughs</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://driplineorg.github.io/dripline">The Dripline Protocol Documentation</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://driplineorg.github.io/dripline-cpp">The C++ Implementation, dripline-cpp</a></li>
@@ -88,9 +91,8 @@
             
   <div class="section" id="why-use-dripline">
 <span id="why-dripline"></span><h1>Why Use Dripline?<a class="headerlink" href="#why-use-dripline" title="Permalink to this headline">¶</a></h1>
-<p>Dripline is a framework for monitoring and controls systems aimed at small-to-medium-scale experimental setups.  It can monitor and control diverse pieces of hardware and software in a distributed, flexible way.
-​
-If you’ve reached this page, you are probably asking why you would consider using dripline
+<p>Dripline is a framework for monitoring and controls systems aimed at small-to-medium-scale experimental setups.  It can monitor and control diverse pieces of hardware and software in a distributed, flexible way.</p>
+<p>If you’ve reached this page, you are probably asking why you would consider using dripline
 and if it is an appropriate solution for your problem.
 The answer to both will depend on circumstances, and we’ll try and dig into that a bit.</p>
 <p>You should consider using dripline if:
@@ -104,9 +106,8 @@ The answer to both will depend on circumstances, and we’ll try and dig into th
 #. You want to be able to easily add arbitrary coordination logic implemented in python
 #. You want to be able to implement performant components in C++
 #. You are comfortable working in a linux environment and from the command line
-#. Your system needs to operate continuously and will combine equipment and subsystems that are quite different from each other
-​
-You should consider not using dripline if:</p>
+#. Your system needs to operate continuously and will combine equipment and subsystems that are quite different from each other</p>
+<p>You should consider not using dripline if:</p>
 <ol class="arabic simple">
 <li><p>You need a system to operate on an open network and expect it to maintain strict security</p></li>
 <li><p>Your system uses a very small number of devices and/or devices that are very similar or from a single OEM that provides a control solution</p></li>
@@ -115,23 +116,20 @@ You should consider not using dripline if:</p>
 <li><p>The control interface to your equipment uses closed-source/proprietary drivers that are specific to another control system and/or incompatible with modern linux.</p></li>
 </ol>
 <p>If you’re interested in learning more aboout dripline, or using it for your system,
-please <a class="reference internal" href="Contact-Us.html#contact-us"><span class="std std-ref">let us know</span></a>!
-​
-​
-Why We Built Dripline
-=====================
-​
-Dripline was designed and built by the <a class="reference external" href="http://www.project8.org">Project 8</a> collaboration, as the slow-controls system for a small-but-growing physics experiment.
+please <a class="reference internal" href="Contact-Us.html#contact-us"><span class="std std-ref">let us know</span></a>!</p>
+<div class="section" id="why-we-built-dripline">
+<h2>Why We Built Dripline<a class="headerlink" href="#why-we-built-dripline" title="Permalink to this headline">¶</a></h2>
+<p>Dripline was designed and built by the <a class="reference external" href="http://www.project8.org">Project 8</a> collaboration, as the slow-controls system for a small-but-growing physics experiment.
 At the time that Project 8 was starting (in the early 2010s), the available experimental control systems had a major gap.
 Some solutions were quite capable, but were built around a single application running on a single server and operating everything.
 Many available options were also only available on closed-source operating systems, which added cost and licensing burdens both on the main system, and reduced the possibility of parallel development.
-Open-source solutions existed, developed for larger physics collaborations, but these were all focused on projects that were large enough to have dedicated support personnel, and required developing in large codebases that needed a significant onboarding effort.
-​
-Dripline was designed based on inspiration from the RESTful interfaces and the growth of cloud-based computing paradigms.
+Open-source solutions existed, developed for larger physics collaborations, but these were all focused on projects that were large enough to have dedicated support personnel, and required developing in large codebases that needed a significant onboarding effort.</p>
+<p>Dripline was designed based on inspiration from the RESTful interfaces and the growth of cloud-based computing paradigms.
 It focuses on first building a framework that is modular, and then provides useful components to plug into that framework.
 This allows the system to grow and evolve in an incremental way, adding new features as they are needed.
 It also allows a control system to leverage the powerful support applications that are developed by the vast cloud-computing industry.
 Finally, we wanted a system that supported very simple expansion with minimal effort when new components are familiar (often you add a configuration file of less than 100 lines, describing a new device), very complicated logic when required (you can easily connect any component you may write in python or C++), and which was fully version controllable so that there should not be hidden configuration information required to re-provision a system.</p>
+</div>
 </div>
 
 
