@@ -9,7 +9,7 @@ If you're interested in learning more aboout dripline, or using it for your syst
 with the label ``Interested in dripline``.
 
 .. image:: post_new_issue.png
-   :width: 66%
+   :width: 80%
    :target: https://github.com/driplineorg/driplineorg.github.io/issues/new
    :alt: Contact form screenshot
    :align: center
