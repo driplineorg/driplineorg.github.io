@@ -7,7 +7,7 @@ Dripline provides a framework for building hardware monitoring and controls syst
 This is just the homepage, you can find more information at the following pages:
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Contents:
 
    Why-Dripline
