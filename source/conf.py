@@ -89,6 +89,8 @@ html_theme = 'furo'
 
 html_theme_options = {
   'source_repository': 'https://github.com/driplineorg/driplineorg.github.io',
+  'source_branch': 'main',
+  'source_directory': 'source/',
   'navigation_with_keys': True,
 }
 
